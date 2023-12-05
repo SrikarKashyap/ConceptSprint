@@ -1,0 +1,4 @@
+streamlit
+openai==0.28
+langchain==0.0.345
+python-docx
