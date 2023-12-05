@@ -141,7 +141,7 @@ After a conversation, the following goals, anti-goals and assumptions have been 
 
 I would like to simulate a conversation between them where they discuss and come to a consensus on the following aspects of the project...
 
-Allocate each member of the group a lightening talk topic (see topics below) to present. Each talk should be around 4-5 sentences and of TED talk format.
+Allocate each member of the group a lightning talk topic (see topics below) to present. Each talk should be around 4-5 sentences and of TED talk format.
 each. Topics include vision/goals, voice of user, existing produces, competitor v iew, technology available.
 -Project Vision / Business Goals
 -Voice of the user / User research
@@ -158,7 +158,7 @@ votes. After voting, present output in the following fixed markdown format:
 
 -----------------------------------
 
-### Lightening Talks
+### Lightning Talks
 
 1. Talk 1
 2. Talk 2
@@ -338,9 +338,9 @@ if prompt:
     st.markdown('Here is the conversation:')
     st.markdown(conversation)
     st.markdown('-----------------------------------')
-    with st.spinner('Generating the Lightening talk and HMWs....'):
+    with st.spinner('Generating the Lightning talk and HMWs....'):
         hmws = prompt3_chain.run(personas=personas, topic=prompt, conversation=conversation)
-    st.markdown('Here is the lightening talks and HMWs:')
+    st.markdown('Here is the lightning talks and HMWs:')
     st.markdown(hmws)
     st.markdown('-----------------------------------')
     top3_hmws = hmws.split('### HMWs sorted by number of votes received descending')[1]
